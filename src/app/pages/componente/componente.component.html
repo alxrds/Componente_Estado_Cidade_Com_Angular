@@ -1,1 +1,30 @@
-<app-estado-cidade></app-estado-cidade>
+<h2 class="content-block">Componente Estado / Cidade</h2>
+
+<div class="content-block dx-card responsive-paddings">
+
+  <div class="options">
+
+    <estado-cidade
+      (estadoUF)="onEstado($event)"
+      [(cidadeValue)]="cidadePage"
+    ></estado-cidade>
+
+    <div class="dx-fieldset-header" style="padding-top: 25px">Escolhas:</div>
+
+    <dx-text-box
+      [readOnly]="true"
+      [hoverStateEnabled]="false"
+      [(value)]="estadoPage"
+      style="padding-top: 10px"
+    ></dx-text-box>
+
+    <dx-text-box
+      [readOnly]="true"
+      [hoverStateEnabled]="false"
+      [(value)]="cidadePage"
+      style="padding-top: 10px"
+    ></dx-text-box>
+
+  </div>
+
+</div>

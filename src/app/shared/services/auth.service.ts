@@ -5,11 +5,11 @@ export interface IUser {
   email: string;
   avatarUrl?: string
 }
-
 const defaultPath = '/';
+
 const defaultUser = {
-  email: 'sandra@example.com',
-  avatarUrl: 'https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/employees/06.png'
+  email: 'alxrds@hotmail.com',
+  avatarUrl: '../../../assets/alxrds.png'
 };
 
 @Injectable()
